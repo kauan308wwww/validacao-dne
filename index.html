@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Validação de Carteira Estudantil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 16px 40px;
+      color: #1e293b;
+    }
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .header {
+      background: #1e3a8a;
+      color: white;
+      padding: 28px 20px 24px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+    .status-panel {
+      text-align: center;
+      padding: 32px 20px;
+    }
+    .status-icon {
+      font-size: 72px;
+      margin-bottom: 16px;
+      color: #2e7d32;
+    }
+    .status-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2e7d32;
+      margin-bottom: 8px;
+    }
+    .status-sub {
+      font-size: 14px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+    .info-grid {
+      padding: 0 20px 24px;
+    }
+    .info-row {
+      display: flex;
+      padding: 12px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .info-label {
+      width: 140px;
+      color: #64748b;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .info-value {
+      flex: 1;
+      text-align: right;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1e293b;
+      word-break: break-word;
+    }
+    .footer {
+      padding: 0 20px 24px;
+      text-align: center;
+      font-size: 11px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    @media (max-width: 480px) {
+      .info-label { width: 120px; font-size: 12px; }
+      .info-value { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Validação de Carteira de Identificação Estudantil</h1>
+    </div>
+
+    <div class="status-panel">
+      <div class="status-icon">✅</div>
+      <div class="status-title">Documento VÁLIDO</div>
+      <div class="status-sub">Este documento foi verificado com sucesso no sistema nacional de validação estudantil.</div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-row">
+        <div class="info-label">Nº da CIE</div>
+        <div class="info-value">202510176854</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Nome</div>
+        <div class="info-value">Kauan Nunes dos Santos</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Instituição</div>
+        <div class="info-value">Universidade Estácio de Sá – Campus Palhoça</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Curso</div>
+        <div class="info-value">Análise e Desenvolvimento de Sistemas</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Nascimento</div>
+        <div class="info-value">27/08/2003</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">CPF</div>
+        <div class="info-value">106.360.660-16</div>
+      </div>
+      <div class="info-row" style="border-bottom: none;">
+        <div class="info-label">Validade</div>
+        <div class="info-value">31/03/2028</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Validado via sistema integrado da UNE, UBES e ANPG.<br>
+      Informações em: <a href="https://meiaentrada.org.br" target="_blank">meiaentrada.org.br</a>
+    </div>
+  </div>
+
+  <script>
+    // Se quiser, pode adicionar lógica futura aqui
+  </script>
+</body>
+</html>
